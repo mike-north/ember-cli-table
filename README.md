@@ -1,6 +1,26 @@
-# Ember-cli-table
+# ember-cli-table
 
 This README outlines the details of collaborating on this Ember addon.
+# Use
+
+## Installation
+
+If you have `ember-cli` 0.1.5 or higher, you can run
+```
+ember install:addon ember-cli-table
+```
+
+## Use
+
+```hbs
+{{#ns-table content=content class='table table-striped'}}
+	{{ns-table-col valuePath='id' title="ID"}}
+	{{ns-table-col valuePath='name' title="Name"}}
+	{{ns-table-col valuePath='status' title="Status"}}
+{{/ns-table}}
+```
+
+# Development
 
 ## Installation
 
