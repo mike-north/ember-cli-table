@@ -1,4 +1,4 @@
-# ember-cli-table
+# ember-cli-table [![Build Status](https://travis-ci.org/MichaelLNorth/ember-cli-table.svg)](https://travis-ci.org/MichaelLNorth/ember-cli-table) [![Code Climate](https://codeclimate.com/github/MichaelLNorth/ember-cli-table/badges/gpa.svg)](https://codeclimate.com/github/MichaelLNorth/ember-cli-table) [![npm version](https://badge.fury.io/js/ember-cli-table.svg)](http://badge.fury.io/js/ember-cli-table)
 
 This README outlines the details of collaborating on this Ember addon.
 # Use
