@@ -40,13 +40,22 @@ import Ember from 'ember';
 
 export default Ember.ArrayController.extend();
 
+// views/my-custom-cell-view.js
+import Ember from 'ember';
+import NSTableCellView from 'ember-cli-table/ns-table-cell-view';
+
+export default NSTableCellView.extend({
+	template: Ember.Handlebars.compile('HELLO!! {{view.content}}')
+});
+
+
 ```
 
 ```hbs
 {{!-- templates/index.hbs --}}
 {{#ns-table content=content class='table table-striped'}}
 	{{ns-table-col valuePath='id' title="ID"}}
-	{{ns-table-col valuePath='name' title="Name" cellViewClass='ns-url-cell-view'}}
+	{{ns-table-col valuePath='name' title="Name" cellViewClass='my-custom-cell-view'}}
 	{{ns-table-col valuePath='status' title="Status"}}
 {{/ns-table}}
 ```
