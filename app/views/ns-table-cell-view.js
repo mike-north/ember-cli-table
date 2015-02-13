@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
-	template: Ember.Handlebars.compile('{{view.content}}')
+	templateName: 'ns-table-cell-view'
 });

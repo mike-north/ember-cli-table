@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import NSTableCellView from '../views/ns-table-cell-view';
 
 export default Ember.Component.extend({
 	tagName: 'th',
@@ -6,5 +7,7 @@ export default Ember.Component.extend({
 	registerToTable: function () {
 		var tableComponent = this.get('parentView');
 		tableComponent.registerColumn(this);
-	}.on('didInsertElement')
+	}.on('didInsertElement'),
+
+	cellViewClass: null
 });

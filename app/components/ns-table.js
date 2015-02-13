@@ -6,6 +6,7 @@ export default Ember.Component.extend({
 	rowValuePaths: [],
 	columnComponents: [],
 	rowsView: NSTableRowsView,
+	refreshDebounceTime: 100,
 
 	registerColumn: function (columnComponent) {
 		this.get('columnComponents').addObject(columnComponent);
@@ -13,8 +14,9 @@ export default Ember.Component.extend({
 	},
 
 	refreshRows: function () {
-		Ember.run.debounce(this, this.refreshRowsImpl, 100);
+		Ember.run.debounce(this, this.refreshRowsImpl, this.get('refreshDebounceTime'));
 	},
+
 	refreshRowsImpl: function () {
 		var cols = this.get('columnComponents').map(
 			function (cc) {
