@@ -7,7 +7,6 @@ export default Ember.CollectionView.extend({
 	columns: [],
     createChildView: function (viewClass, attrs) {
     	var columnModel = this.get('columns')[attrs.contentIndex];
-    	debugger;
     	return this._super(columnModel.get('cellViewClass') || this.get('defaultItemViewClass'), Ember.$.extend(attrs, {row: this.get('row')}));
     }
 });
