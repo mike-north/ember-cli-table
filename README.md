@@ -59,7 +59,7 @@ export default NSTableCellView.extend({
 	{{ns-table-col valuePath='status' title="Status"}}
 {{/ns-table}}
 ```
-
+![Table](http://i61.tinypic.com/9u7qtf.png)
 # Development
 
 ## Installation
