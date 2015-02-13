@@ -45,7 +45,9 @@ import Ember from 'ember';
 import NSTableCellView from 'ember-cli-table/ns-table-cell-view';
 
 export default NSTableCellView.extend({
-	template: Ember.Handlebars.compile('HELLO!! {{view.content}}')
+	template: Ember.Handlebars.compile(
+		'HELLO!! {{view.content}} ({{view.row.id}})'
+	)
 });
 
 
@@ -59,7 +61,7 @@ export default NSTableCellView.extend({
 	{{ns-table-col valuePath='status' title="Status"}}
 {{/ns-table}}
 ```
-![Table](http://i61.tinypic.com/9u7qtf.png)
+![Table](http://i58.tinypic.com/2ql48k9.png)
 # Development
 
 ## Installation
