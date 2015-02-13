@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-table",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A composable table component for ember.js",
   "directories": {
     "doc": "doc",
